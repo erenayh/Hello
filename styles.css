@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #1c1c1c, #333333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-color: #2a2a2a;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FF6F61;
+  }
+  
+  .card p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  .card .highlight {
+    color: #FF6F61;
+    font-weight: 600;
+  }
+  
+  .card .passion {
+    background-color: #444;
+    border: 1px solid #FF6F61;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    font-weight: 500;
+    color: #ddd;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card .passion:hover {
+    background-color: #555;
+    border-color: #FF6F61;
+    cursor: pointer;
+  }
+  
+  .card button {
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.2);
+  }
+  
+  .card button:hover {
+    background-color: #e04e43;
+    transform: translateY(-5px);
+  }
+  
+  .card .footer {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 500px) {
+    .card {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .card h1 {
+      font-size: 30px;
+    }
+  
+    .card p {
+      font-size: 16px;
+    }
+  }
+  
